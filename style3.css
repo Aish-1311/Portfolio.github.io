@@ -15,7 +15,7 @@ nav{
     display: flex;
     display: 80%;
     margin:auto;
-    padding: 20px 0;
+    padding: 24px 0;
     align-items:center;
     justify-content: space-between;
 }
@@ -72,6 +72,17 @@ span{
     top:36%;
 } 
 
+.flex-item {
+  padding: 24px;
+  margin-bottom: 16px;
+  margin-right: 18px;
+  margin-left: 18px;
+  border-color: black;
+  border-radius: 8px;
+  border-style: groove;
+  border-width: 2px;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -79,7 +90,7 @@ span{
   
 
     .hero{
-        height: 115vh;
+        height: 140vh;
        }
 
     .images .shape {
@@ -132,4 +143,18 @@ span{
         height: auto;
       
       }
+  }
+
+  @media screen and (min-width: 360px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    .hero{
+      max-height: 130vh;
+     }
+
   }
